@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Builder",
+    "description": "Create professional resumes with basic templates and export options.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "10+ templates",
+      "Basic customization",
+      "Export to PDF"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder with ATS optimization and premium templates.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF & DOCX"
+    ],
+    "icon": "🚀"
+  },
+  {
+    "id": 3,
+    "name": "Career Toolkit",
+    "description": "All-in-one toolkit including resume, cover letter, and portfolio builder.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Resume builder",
+      "Cover letter builder",
+      "Portfolio creator"
+    ],
+    "icon": "🧰"
+  },
+  {
+    "id": 4,
+    "name": "Job Tracker",
+    "description": "Track your job applications and manage interview schedules.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Application tracking",
+      "Interview reminders",
+      "Status updates"
+    ],
+    "icon": "📊"
+  },
+  {
+    "id": 5,
+    "name": "LinkedIn Optimizer",
+    "description": "Optimize your LinkedIn profile to attract recruiters.",
+    "price": 14.99,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Profile analysis",
+      "Keyword suggestions",
+      "Headline generator"
+    ],
+    "icon": "🔗"
+  },
+  {
+    "id": 6,
+    "name": "Interview Coach",
+    "description": "Practice interviews with AI-based feedback and tips.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Mock interviews",
+      "AI feedback",
+      "Common questions"
+    ],
+    "icon": "🎤"
+  },
+  {
+    "id": 7,
+    "name": "Portfolio Builder",
+    "description": "Create stunning personal portfolios with ease.",
+    "price": 29.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Custom domains",
+      "Drag & drop builder",
+      "Responsive design"
+    ],
+    "icon": "🌐"
+  },
+  {
+    "id": 8,
+    "name": "Skill Assessment",
+    "description": "Evaluate your skills with tests and get improvement tips.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Skill tests",
+      "Performance reports",
+      "Improvement tips"
+    ],
+    "icon": "🧠"
+  },
+  {
+    "id": 9,
+    "name": "Ultimate Career Pack",
+    "description": "Complete career solution bundle with all premium features.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "All tools included",
+      "Priority support",
+      "Unlimited exports"
+    ],
+    "icon": "💼"
+  }
+]
