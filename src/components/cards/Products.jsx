@@ -1,14 +1,14 @@
 import React, { use } from 'react';
 import Card from './Card';
 
-const Products = ({allProductsData}) => {
+const Products = ({allProductsData, handleAddToCart}) => {
     const allData = use(allProductsData);
     return (
         <>
             {
                 allData.map((data) => {
                     return (
-                        <Card key={data.id} data={data}></Card>
+                        <Card handleAddToCart={handleAddToCart} key={data.id} data={data}></Card>
                     )
                 })
             }

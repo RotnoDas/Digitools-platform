@@ -1,7 +1,7 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 
-const Card = ({data}) => {
+const Card = ({data, handleAddToCart}) => {
     return (
         <div>
             <div className='p-6 rounded-2xl bg-[#FFFFFF] border-2 border-[#F2F2F2] h-full'>
@@ -36,7 +36,7 @@ const Card = ({data}) => {
                         })
                     }
                 </div>
-                <button className='px-4 py-3 rounded-[100px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] manrope font-bold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] w-full'>Buy Now</button>
+                <button onClick={() => handleAddToCart(data)} className='px-4 py-3 rounded-[100px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] manrope font-bold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] w-full'>Buy Now</button>
             </div>
         </div>
     );

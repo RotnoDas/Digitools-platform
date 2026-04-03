@@ -16,7 +16,7 @@ const productsData = async() => {
 }
 const allProductsData = productsData();
 
-const Contents = () => {
+const Contents = ({handleAddToCart, cartItems, handleRemoveFromCart}) => {
     const [isSelected, setIsSelected] = useState('products');
     return (
         <div className='px-50 py-30 bg-[#FFFFFF]'>
@@ -33,12 +33,12 @@ const Contents = () => {
                     isSelected === 'products' ?
                     <div className='grid grid-cols-3 gap-7.5'>
                         <Suspense fallback={<div>Loading</div>}>
-                            <Products allProductsData={allProductsData}></Products>
+                            <Products handleAddToCart={handleAddToCart} allProductsData={allProductsData}></Products>
                         </Suspense>
                     </div>
                     :
                     <div>
-                        <Cart></Cart>
+                        <Cart cartItems={cartItems} handleRemoveFromCart={handleRemoveFromCart}></Cart>
                     </div>
                 }
             </div>
