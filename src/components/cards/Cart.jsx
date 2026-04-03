@@ -1,6 +1,7 @@
 import React from 'react';
 import shoppingCart from '../../assets/shopping-cart.png';
 import CartProduct from './CartProduct';
+import CartProductPrice from './CartProductPrice';
 
 const Cart = ({cartItems, handleRemoveFromCart}) => {
     return (
@@ -31,7 +32,7 @@ const Cart = ({cartItems, handleRemoveFromCart}) => {
                         </div>
                         <div className='flex items-center justify-between mb-6'>
                             <p className='manrope font-normal text-[16px] leading-[auto] tracking-[0%] text-[#627382]'>Total:</p>
-                            <p className='manrope font-bold text-[24px] leading-[auto] tracking-[0%] text-[#101727]'>$29</p>
+                            <CartProductPrice cartItems={cartItems}></CartProductPrice>
                         </div>
                         <button className='px-4 py-3 rounded-[100px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full manrope font-bold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF]'>Proceed to Checkout</button>
                     </div>

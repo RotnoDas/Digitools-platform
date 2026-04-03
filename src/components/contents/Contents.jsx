@@ -25,7 +25,7 @@ const Contents = ({handleAddToCart, cartItems, handleRemoveFromCart}) => {
                 <p className='manrope font-normal text-[16px] leading-5 tracking-[0%] text-[#627382]'>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
                 <div className='p-2 rounded-[100px] bg-[#FFFFFF] border-2 border-[#F6F6F6] space-x-5 flex items-center justify-center'>
                     <button onClick={() => {setIsSelected('products')}} className={isSelected === 'products' ? 'px-4 py-3 bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-[10000px] inter font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] drop-shadow-lg' : 'manrope font-medium text-[16px] leading-[auto] tracking-[0%] text-[#25065D]'} >Products</button>
-                    <button onClick={() => {setIsSelected('cart')}} className={isSelected === 'cart' ? 'px-4 py-3 bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-[10000px] inter font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] drop-shadow-lg' : 'manrope font-medium text-[16px] leading-[auto] tracking-[0%] text-[#25065D]'}>Cart ()</button>
+                    <button onClick={() => {setIsSelected('cart')}} className={isSelected === 'cart' ? 'px-4 py-3 bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-[10000px] inter font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] drop-shadow-lg' : 'manrope font-medium text-[16px] leading-[auto] tracking-[0%] text-[#25065D]'}>Cart ({cartItems.length})</button>
                 </div>
             </div>
             <div>
@@ -33,7 +33,7 @@ const Contents = ({handleAddToCart, cartItems, handleRemoveFromCart}) => {
                     isSelected === 'products' ?
                     <div className='grid grid-cols-3 gap-7.5'>
                         <Suspense fallback={<div>Loading</div>}>
-                            <Products handleAddToCart={handleAddToCart} allProductsData={allProductsData}></Products>
+                            <Products cartItems={cartItems} handleAddToCart={handleAddToCart} allProductsData={allProductsData}></Products>
                         </Suspense>
                     </div>
                     :
