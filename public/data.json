@@ -12,14 +12,14 @@
       "Basic customization",
       "Export to PDF"
     ],
-    "icon": "📄"
+    "icon": "https://img.icons8.com/color/96/resume.png"
   },
   {
     "id": 2,
     "name": "Pro Resume Builder",
     "description": "Advanced resume builder with ATS optimization and premium templates.",
     "price": 9.99,
-    "period": "monthly",
+    "period": "month",
     "tag": "popular",
     "tagType": "popular",
     "features": [
@@ -27,14 +27,14 @@
       "ATS optimization",
       "Export to PDF & DOCX"
     ],
-    "icon": "🚀"
+    "icon": "https://img.icons8.com/color/96/rocket.png"
   },
   {
     "id": 3,
     "name": "Career Toolkit",
     "description": "All-in-one toolkit including resume, cover letter, and portfolio builder.",
     "price": 19.99,
-    "period": "monthly",
+    "period": "month",
     "tag": "best seller",
     "tagType": "best seller",
     "features": [
@@ -42,14 +42,14 @@
       "Cover letter builder",
       "Portfolio creator"
     ],
-    "icon": "🧰"
+    "icon": "https://img.icons8.com/color/96/toolbox.png"
   },
   {
     "id": 4,
     "name": "Job Tracker",
     "description": "Track your job applications and manage interview schedules.",
     "price": 4.99,
-    "period": "monthly",
+    "period": "month",
     "tag": "new",
     "tagType": "new",
     "features": [
@@ -57,7 +57,7 @@
       "Interview reminders",
       "Status updates"
     ],
-    "icon": "📊"
+    "icon": "https://img.icons8.com/color/96/combo-chart.png"
   },
   {
     "id": 5,
@@ -72,14 +72,14 @@
       "Keyword suggestions",
       "Headline generator"
     ],
-    "icon": "🔗"
+    "icon": "https://img.icons8.com/color/96/linkedin.png"
   },
   {
     "id": 6,
     "name": "Interview Coach",
     "description": "Practice interviews with AI-based feedback and tips.",
     "price": 12.99,
-    "period": "monthly",
+    "period": "month",
     "tag": "best seller",
     "tagType": "best seller",
     "features": [
@@ -87,14 +87,14 @@
       "AI feedback",
       "Common questions"
     ],
-    "icon": "🎤"
+    "icon": "https://img.icons8.com/color/96/microphone.png"
   },
   {
     "id": 7,
     "name": "Portfolio Builder",
     "description": "Create stunning personal portfolios with ease.",
     "price": 29.99,
-    "period": "yearly",
+    "period": "year",
     "tag": "popular",
     "tagType": "popular",
     "features": [
@@ -102,14 +102,14 @@
       "Drag & drop builder",
       "Responsive design"
     ],
-    "icon": "🌐"
+    "icon": "https://img.icons8.com/color/96/domain.png"
   },
   {
     "id": 8,
     "name": "Skill Assessment",
     "description": "Evaluate your skills with tests and get improvement tips.",
     "price": 7.99,
-    "period": "monthly",
+    "period": "month",
     "tag": "new",
     "tagType": "new",
     "features": [
@@ -117,14 +117,14 @@
       "Performance reports",
       "Improvement tips"
     ],
-    "icon": "🧠"
+    "icon": "https://img.icons8.com/color/96/brain.png"
   },
   {
     "id": 9,
     "name": "Ultimate Career Pack",
     "description": "Complete career solution bundle with all premium features.",
     "price": 99.99,
-    "period": "yearly",
+    "period": "year",
     "tag": "best seller",
     "tagType": "best seller",
     "features": [
@@ -132,6 +132,6 @@
       "Priority support",
       "Unlimited exports"
     ],
-    "icon": "💼"
+    "icon": "https://img.icons8.com/color/96/briefcase.png"
   }
 ]

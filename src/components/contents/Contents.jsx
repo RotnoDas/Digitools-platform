@@ -1,6 +1,20 @@
 import React, { useState } from 'react';
+import { Suspense } from 'react';
 import Products from '../cards/Products';
 import Cart from '../cards/Cart';
+
+const dataUrl = '/data.json';
+const productsData = async() => {
+    try {
+        const response = await fetch(dataUrl);
+        const data = await response.json();
+        return data;
+    }
+    catch(error) {
+        console.log('Error fetching data: ', error);
+    }
+}
+const allProductsData = productsData();
 
 const Contents = () => {
     const [isSelected, setIsSelected] = useState('products');
@@ -17,8 +31,10 @@ const Contents = () => {
             <div>
                 {
                     isSelected === 'products' ?
-                    <div>
-                        <Products></Products>
+                    <div className='grid grid-cols-3 gap-7.5'>
+                        <Suspense fallback={<div>Loading</div>}>
+                            <Products allProductsData={allProductsData}></Products>
+                        </Suspense>
                     </div>
                     :
                     <div>
