@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import Card from './Card';
 
-const Products = ({allProductsData, handleAddToCart, cartItems}) => {
+const Products = ({allProductsData, handleAddToCart, cartItems, buy}) => {
     const allData = use(allProductsData);
     return (
         <>
@@ -11,7 +11,7 @@ const Products = ({allProductsData, handleAddToCart, cartItems}) => {
                         return item.id === data.id;
                     })
                     return (
-                        <Card isInCart={isInCart} handleAddToCart={handleAddToCart} key={data.id} data={data}></Card>
+                        <Card buy={buy} isInCart={isInCart} handleAddToCart={handleAddToCart} key={data.id} data={data}></Card>
                     )
                 })
             }

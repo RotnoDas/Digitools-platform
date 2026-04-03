@@ -1,7 +1,8 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 
-const Card = ({data, handleAddToCart, isInCart}) => {
+
+const Card = ({data, handleAddToCart, isInCart, buy}) => {
     return (
         <div>
             <div className='p-6 rounded-2xl bg-[#FFFFFF] border-2 border-[#F2F2F2] h-full'>
@@ -38,7 +39,9 @@ const Card = ({data, handleAddToCart, isInCart}) => {
                 </div>
                 <button onClick={() => {
                     handleAddToCart(data)
-                }} className={isInCart ? 'px-4 py-3 rounded-[100px] bg-[#30B868] manrope font-bold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] w-full' : 'px-4 py-3 rounded-[100px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] manrope font-bold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] w-full'}>{isInCart ? (<p className='flex items-center justify-center gap-2'><Check></Check>Added to Cart!</p>) : 'Buy Now'}</button>
+                    buy();
+                }} className={isInCart ? 'px-4 py-3 rounded-[100px] bg-[#30B868] manrope font-bold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] w-full' : 'px-4 py-3 rounded-[100px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] manrope font-bold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] w-full'}>{isInCart ? (<p className='flex items-center justify-center gap-2'><Check></Check>Added to Cart!</p>) : 'Buy Now'}
+                </button>
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ import shoppingCart from '../../assets/shopping-cart.png';
 import CartProduct from './CartProduct';
 import CartProductPrice from './CartProductPrice';
 
-const Cart = ({cartItems, handleRemoveFromCart}) => {
+const Cart = ({cartItems, handleRemoveFromCart, proceedToCheckout, notify, remove}) => {
     return (
         <div>
             {cartItems.length === 0 ? (
@@ -25,7 +25,7 @@ const Cart = ({cartItems, handleRemoveFromCart}) => {
                             {
                                 cartItems.map((cartItem) => {
                                     return (
-                                        <CartProduct key={cartItem.id} cartItem={cartItem} handleRemoveFromCart={handleRemoveFromCart}></CartProduct>
+                                        <CartProduct remove={remove} key={cartItem.id} cartItem={cartItem} handleRemoveFromCart={handleRemoveFromCart}></CartProduct>
                                     )
                                 })
                             }
@@ -34,7 +34,10 @@ const Cart = ({cartItems, handleRemoveFromCart}) => {
                             <p className='manrope font-normal text-[16px] leading-[auto] tracking-[0%] text-[#627382]'>Total:</p>
                             <CartProductPrice cartItems={cartItems}></CartProductPrice>
                         </div>
-                        <button className='px-4 py-3 rounded-[100px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full manrope font-bold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF]'>Proceed to Checkout</button>
+                        <button onClick={() => {
+                            proceedToCheckout();
+                            notify();
+                        }} className='px-4 py-3 rounded-[100px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full manrope font-bold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF]'>Proceed to Checkout</button>
                     </div>
                 )
             }
