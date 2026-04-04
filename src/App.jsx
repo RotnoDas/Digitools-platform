@@ -7,6 +7,8 @@ import Stats from './components/stats/Stats'
 import { ToastContainer, toast, Zoom } from 'react-toastify';
 import Features from './components/features/Features'
 import Pricing from './components/pricing/Pricing'
+import Testimonials from './components/testimonials/Testimonials'
+import Footer from './components/footer/Footer'
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -76,10 +78,11 @@ function App() {
           <Contents remove={remove} buy={buy} notify={notify} proceedToCheckout={proceedToCheckout} cartItems={cartItems} handleAddToCart={handleAddToCart} handleRemoveFromCart={handleRemoveFromCart}></Contents>
           <Features></Features>
           <Pricing></Pricing>
+          <Testimonials></Testimonials>
         </div>
       </main>
       <footer>
-
+        <Footer></Footer>
       </footer>
       <ToastContainer position="top-right"
         autoClose={5000}
