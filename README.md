@@ -1,16 +1,85 @@
-# React + Vite
+# DigiTools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive digital product marketplace UI where users can browse premium tools, add products to cart, and complete checkout with clean feedback interactions.
 
-Currently, two official plugins are available:
+## Project Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+DigiTools Platform is a front-end focused web application built to showcase and sell digital products in a smooth and user-friendly interface. It combines a marketing landing page with an interactive product and cart experience, including real-time cart updates and toast notifications.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Tailwind CSS
+- DaisyUI
+- JavaScript (ES6+)
+- React-Toastify (NPM Package)
+- JSON (for product data)
 
-## Expanding the ESLint configuration
+## Core Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Interactive product catalog fetched from local JSON data.
+- Add-to-cart and remove-from-cart actions with instant UI updates.
+- Dynamic cart total calculation and one-click checkout reset.
+
+## Additional Features
+
+- Toast notifications for add, remove, and checkout events.
+- Responsive layout across mobile, tablet, and desktop breakpoints.
+- Reusable component-based architecture for easy scaling.
+- Sticky top navigation with cart item counter.
+- Multiple landing sections: banner, stats, features, pricing, and footer.
+
+## Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Run development server
+
+```bash
+npm run dev
+```
+
+### 3. Build for production
+
+```bash
+npm run build
+```
+
+### 4. Preview production build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```text
+src/
+	components/
+		banner/
+		cards/
+		contents/
+		features/
+		footer/
+		navbar/
+		pricing/
+		stats/
+		testimonials/
+public/
+	data.json
+```
+
+## Future Improvements
+
+- Persist cart data with localStorage.
+- Add search and category filters for products.
+- Integrate authentication and payment gateway flow.
+- Add unit and integration tests.
+
+## License
+
+This project is for learning and portfolio use.

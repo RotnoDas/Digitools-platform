@@ -16,7 +16,7 @@ const Banner = () => {
                         <p className='manrope font-medium text-[16px] leading-[auto] tracking-[0%] bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>New: AI-Powered Tools Available</p>
                     </div>
                 </div>
-                <h1 className='max-sm:text-center max-xl:text-center manrope font-extrabold text-[72px] leading-21 tracking-[0%] text-[#101727] mb-4'>Supercharge Your <br /> Digital Workflow</h1>
+                <h1 className='max-sm:text-center max-xl:text-center manrope font-extrabold max-sm:text-[60px] sm:text-[65px] md:text-[70px] lg:text-[72px] leading-21 tracking-[0%] text-[#101727] mb-4'>Supercharge Your <br /> Digital Workflow</h1>
                 <p className='max-xl:text-center manrope font-normal text-[18px] leading-5 tracking-[0%] text-[#627382] mb-8'>Access premium AI tools, design assets, templates, and productivity <br /> software—all in one place. Start creating faster today. <br /> Explore Products.</p>
                 <div className='max-lg:flex max-lg:items-center max-lg:justify-center flex items-center gap-4'>
                     <button className='px-4 py-3 bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-[10000px] inter font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF]'>Explore Products</button>
