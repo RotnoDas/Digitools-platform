@@ -6,6 +6,10 @@ A modern, responsive digital product marketplace UI where users can browse premi
 
 DigiTools Platform is a front-end focused web application built to showcase and sell digital products in a smooth and user-friendly interface. It combines a marketing landing page with an interactive product and cart experience, including real-time cart updates and toast notifications.
 
+## Live Project
+
+- https://digitools-platform001.netlify.app/
+
 ## Tech Stack
 
 - React.js
