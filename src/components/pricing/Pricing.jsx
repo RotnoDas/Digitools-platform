@@ -3,10 +3,10 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <div className='px-50 py-30 bg-[#FFFFFF]'>
+        <div className='max-sm:px-1 max-sm:py-5 sm:px-1 sm:py-5 md:px-5 md:py-10 lg:px-28 lg:py-10 xl:px-50 xl:py-30 bg-[#FFFFFF]'>
             <h1 className='manrope font-extrabold text-[48px] leading-[auto] tracking-[0%] text-[#101727] text-center mb-4'>Simple Transparent Pricing</h1>
             <p className='manrope font-normal text-[16px] leading-5 tracking-[0%] text-[#627382] text-center mb-10'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
-            <div className='flex items-center justify-between gap-7.5'>
+            <div className='max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:gap-7.5 sm:flex sm:flex-col sm:items-center sm:justify-center sm:gap-7.5 md:flex md:flex-col md:items-center md:justify-between md:gap-7.5 lg:flex lg:flex-col lg:items-center lg:justify-between lg:gap-7.5 xl:flex xl:flex-row xl:items-center xl:justify-between xl:gap-7.5'>
                 <div className='p-6 rounded-2xl bg-[#F9FAFC] border-2 border-[#F2F2F2] w-95 h-full'>
                     <h1 className='manrope font-bold text-[24px] leading-[auto] tracking-[0%] text-[#101727] mb-2'>Starter</h1>
                     <p className='manrope font-normal text-[16px] leading-5 tracking-[0%] text-[#627382] mb-6'>Perfect for getting started</p>

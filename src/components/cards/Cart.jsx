@@ -19,7 +19,7 @@ const Cart = ({cartItems, handleRemoveFromCart, proceedToCheckout, notify, remov
                     </div>
                 </div>
                 ) : (
-                    <div className='p-10 rounded-2xl bg-[#FFFFFF] border-2 border-[#F2F2F2]'>
+                    <div className='max-sm:p-1 sm:p-1 md:p-5 lg:p-5 xl:p-10 rounded-2xl bg-[#FFFFFF] border-2 border-[#F2F2F2]'>
                         <h1 className='manrope font-bold text-[24px] leading-[auto] tracking-[0%] text-[#101727]'>Your Cart</h1>
                         <div>
                             {

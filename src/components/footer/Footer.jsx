@@ -5,8 +5,8 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
     return (
-        <div className='px-50 pt-30 pb-7.5 bg-[#101727]'>
-            <div className='flex items-start justify-between mb-20'>
+        <div className='max-sm:px-1 max-sm:pt-3 max-sm:pb-3 sm:px-1 sm:pt-3 sm:pb-3 md:px-5 md:pt-7.5 md:pb-7.5 lg:px-28 lg:pt-7.5 lg:pb-7.5 xl:px-50 xl:pt-30 xl:pb-7.5 bg-[#101727]'>
+            <div className='max-sm:flex max-sm:flex-col max-sm:items-start max-sm:justify-between max-sm:gap-4 sm:flex sm:flex-col sm:items-start sm:justify-between sm:gap-4 md:flex md:flex-row md:flex-wrap md:items-start md:justify-between md:gap-4 lg:flex lg:items-center lg:justify-between xl:flex xl:items-start xl:justify-between mb-20'>
                 <div>
                     <h1 className='manrope font-bold text-[40px] leading-[auto] tracking-[0%] text-[#FFFFFF] mb-4'>DigiTools</h1>
                     <p className='manrope font-normal text-[16px] leading-6 tracking-[0%] text-[#FFFFFF] opacity-80'>Premium digital tools for creators, <br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.</p>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className='text-[#E5E7EB] border opacity-20' />
-            <div className='mt-7.5 flex items-center justify-between'>
+            <div className='mt-7.5 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:gap-4 sm:flex sm:flex-col sm:items-center sm:justify-center sm:gap-4 md:flex md:flex-row md:flex-wrap md:items-center md:justify-between lg:flex lg:items-center lg:justify-between xl:flex xl:items-center xl:justify-between'>
                 <div>
                     <p className='manrope font-normal text-[16px] leading-6 tracking-[0%] text-[#FAFAFA] opacity-50'>© 2026 Digitools. All rights reserved.</p>
                 </div>

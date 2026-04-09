@@ -2,7 +2,7 @@ import React from 'react';
 
 const Testimonials = () => {
     return (
-        <div className='px-50 py-30 bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>
+        <div className='max-sm:px-1 max-sm:py-5 sm:px-1 sm:py-5 md:px-5 md:py-10 lg:px-28 lg:py-10 xl:px-50 xl:py-30 bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>
             <h1 className='manrope font-extrabold text-[40px] leading-[auto] tracking-[0%] text-[#FFFFFF] text-center mb-4'>Ready to Transform Your Workflow?</h1>
             <p className='manrope font-normal text-[16px] leading-6 tracking-[0%] text-[#FFFFFF] opacity-90 text-center mb-10'>Join thousands of professionals who are already using Digitools to work smarter. Start your free trial today.</p>
             <div className='flex items-center justify-center gap-4 mb-4'>
